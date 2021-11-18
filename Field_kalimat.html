@@ -1,0 +1,79 @@
+<html>
+    <head>
+   
+        <title>Hitung Jumlah Huruf, Kata, Vokal</title>
+        <script src="hitungScript.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    </head>
+    <style>
+        body{
+            margin: 0 auto;
+  background-color: #8dd8f8;}
+
+nav{
+    position: inherit;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    background-color: #f2f7f6;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: double;
+    border-color: #1a739e;;
+   
+    
+}
+header{
+  background-color: #2452a3;
+  margin: auto;
+  padding: 15px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+h2{
+  font-family: andalus;
+  font-style: italic;
+}
+button{
+ margin-left: 150px;
+}
+label{
+    font-size: 9px;
+}
+
+    </style>
+    <body>
+        <nav>
+            <header>
+                <h2>SILAHKAN MASUKAN KALIMAT DIBAWAH INI</h2>
+            </header>
+        <form name="wordcount" class="form">
+
+        <p><textarea cols=50 row=20 id="input_user" name="input_user" style="margin-left: 35px;"></textarea></p>
+
+        <input name="huruf" id="huruf" value="0" size=1 style="margin-left:10px ; font-size: 8px;"> <!--huruf-->
+        <label>Jumlah huruf</label>
+        <input name="changeangka" id="changeangka" value="0" size=35 style="margin-left: 35px; font-size: 8px;">
+        <label>Mengubah Huruf Vokal Menjadi Angka</label>
+
+        <p><input name="words" id="words" value="0" size=1 style="margin-left:10px ; font-size: 8px;"> <!-- kata-->
+        <label>Jumlah Kata</label>
+        <input name="change_fibonannci" id="change_fibonannci" value="0" size=30 style="margin-left: 39px; font-size: 8px;">
+        <label>Mengubah Huruf Vokal Menjadi bil. Fibonannci</label></p>
+
+        <p><input name="vowel" id="vowel"value="0" size=1 style="margin-left:10px ; font-size: 8px;"> <!--Vokal-->
+        <label>Jumlah Huruf Vocal</label>
+        <input name="hasil6" id="hasil6" value="0" size=35 style="margin-left: 14px;font-size: 8px;">
+        <label>Mengubah Huruf tengah Menjadi *</label></p>
+
+        <p><button type="button" onclick="hitung()">Klik Untuk Menghitung</button></p>
+       
+    </form>
+        </nav>
+    </body>
+</html>
